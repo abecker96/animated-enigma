@@ -21,4 +21,9 @@ public partial class _Default : System.Web.UI.Page
         FormsAuthentication.RedirectToLoginPage();
         Session.Abandon();
     }
+
+    protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
 }

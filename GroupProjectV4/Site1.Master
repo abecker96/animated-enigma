@@ -11,9 +11,6 @@
         .auto-style1 {
             width: 100%;
         }
-        .auto-style2 {
-            width: 379px;
-        }
         .auto-style3 {
             height: 34px;
         }
@@ -35,8 +32,6 @@
                 <asp:ControlParameter ControlID="UserNameTxtBox" Name="Email" PropertyName="Text" Type="String" />
             </SelectParameters>
         </asp:SqlDataSource>
-        <asp:DropDownList ID="RoleDropDownList" runat="server" DataSourceID="RoleDatasource" DataTextField="Role" DataValueField="Role" Visible="False">
-        </asp:DropDownList>
         <asp:SqlDataSource ID="RoleDatasource" runat="server" ConnectionString="<%$ ConnectionStrings:UserConnectionString %>" SelectCommand="SELECT [Role] FROM [Users] WHERE ([Email] = @Email)">
             <SelectParameters>
                 <asp:ControlParameter ControlID="UserNameTxtBox" Name="Email" PropertyName="Text" Type="String" />
