@@ -35,6 +35,15 @@ namespace GroupProjectV4
                 SignOutButton.Visible = false;
             }
 
+            //Display Admin page
+            if(RoleDropDownList.SelectedValue == "Admin")
+            {
+                ControlPanelButton.Visible = true;
+            }
+            else
+            {
+                ControlPanelButton.Visible = false;
+            }    
 
         }
 
