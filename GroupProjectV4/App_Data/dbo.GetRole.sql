@@ -1,9 +1,9 @@
 ﻿CREATE PROCEDURE [dbo].[GetRole]
-	@name text
+	@name nvarchar(50)
 AS
-	begin
-		declare @role int
-		select @role = Admin + Moderator 
+	BEGIN
+		declare @role nvarchar(50)
+		select @role = Role
 		from Users 
 		where Name = @name
-	end
+	END
